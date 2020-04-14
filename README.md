@@ -49,8 +49,7 @@ if __name__ == "__main__":
     provider = {
         'cert': '/path/to/cert/client.crt',
         'key': '/path/to/key/client.key',
-        'host': '192.168.0.116',
-        'port': 1234
+        'host': '192.168.0.116'
     }
     create_network()
 ```
@@ -67,8 +66,7 @@ def networks_list():
             'provider': {
                 'cert': '/path/to/client.crt',
                 'key': '/path/to/client.key',
-                'host': '192.168.0.116',
-                'port': 1234
+                'host': '192.168.0.116'
             }
         }
         rsp = NetworkManager.list_all_networks(network=json.dumps(list_payload))
@@ -94,8 +92,7 @@ def test_network_delete():
             'provider': {
                 'cert': '/path/to/client.crt',
                 'key': '/path/to/client.key',
-                'host': '192.168.0.116',
-                'port': 1234
+                'host': '192.168.0.116'
             }
         }
         rsp = NetworkManager.delete_network(network=json.dumps(nw_create_payload))
@@ -117,8 +114,7 @@ def subnet_create():
             'provider': {
                 'cert': '/path/to/client.crt',
                 'key': '/path/to/client.key',
-                'host': '192.168.0.116',
-                'port': 1234
+                'host': '192.168.0.116'
             },
             'organization_name': 'Tcpwave',
             'name': 'Test Subnet 1',
@@ -145,8 +141,7 @@ def next_available_ip():
             'provider': {
                 'cert': '/path/to/client.crt',
                 'key': '/path/to/client.key',
-                'host': '192.168.0.116',
-                'port': 1234
+                'host': '192.168.0.116'
             },
             'organization_name': 'Tcpwave',
             'subnet_address': '153.168.0.0/16'
@@ -170,8 +165,7 @@ def create_object():
             'provider': {
                 'cert': '/path/to/client.crt',
                 'key': '/path/to/client.key',
-                'host': '192.168.0.116',
-                'port': 1234
+                'host': '192.168.0.116'
             },
             'organization_name': 'Tcpwave',
             'subnet_address': '153.168.0.0/16',
@@ -198,8 +192,7 @@ def delete_object(ip):
             'provider': {
                 'cert': '/path/to/client.crt',
                 'key': '/path/to/client.key',
-                'host': '192.168.0.116',
-                'port': 1234
+                'host': '192.168.0.116'
             },
             'organization_name': 'Tcpwave',
             'ip_address': ip

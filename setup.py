@@ -21,7 +21,7 @@ with open('requirements.txt') as requirements_file:
 
 setup(
     name='tcpwave-client',
-    version='1.0.1',
+    version='1.0.2',
     description="Client for interacting with Tcpwave's IPAM",
     license='Apache',
     long_description=readme + '\n\n' + history,
@@ -31,9 +31,9 @@ setup(
     url='https://github.com/TCPWAVE/tims-python-client',
     download_url='https://github.com/TCPWAVE/tims-python-client/archive/master.zip',
     packages=[
-        'client',
+        'tcpwave_client',
     ],
-    package_dir={'client': 'client'},
+    package_dir={'tcpwave-client': 'tcpwave_client'},
     include_package_data=True,
     install_requires=requirements,
     zip_safe=False,
@@ -43,8 +43,8 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.7',
+        # "Programming Language :: Python :: 2",
+        # 'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',

@@ -1,5 +1,5 @@
-from client.networks import NetworkManager
-from client.exceptions import APICallFailedException
+from tcpwave_client import NetworkManager
+from tcpwave_client import APICallFailedException
 import json
 
 
@@ -241,10 +241,9 @@ def test_complete_flow():
 
 if __name__ == "__main__":
     provider = {
-        'cert': 'client.crt',
-        'key': 'client.key',
-        'host': '192.168.0.116',
-        'port': 1234
+        'cert': '/home/saurabh/cert/client.crt',
+        'key': '/home/saurabh/cert/client.key',
+        'host': '192.168.0.116'
     }
 
     test_complete_flow()

@@ -61,8 +61,7 @@ This example shows how to create network in IPAM using this library::
         provider = {
             'cert': '/path/to/cert/client.crt',
             'key': '/path/to/key/client.key',
-            'host': '192.168.0.116',
-            'port': 1234
+            'host': '192.168.0.116'
         }
         create_network()
 
@@ -81,8 +80,7 @@ This snippet shows only the complete payload required for thr API call to work f
                 'provider': {
                     'cert': '/path/to/client.crt',
                     'key': '/path/to/client.key',
-                    'host': '192.168.0.116',
-                    'port': 1234
+                    'host': '192.168.0.116'
                 }
             }
             rsp = NetworkManager.list_all_networks(network=json.dumps(list_payload))
@@ -108,8 +106,7 @@ This example shows the deletion of a network::
                 'provider': {
                     'cert': '/path/to/client.crt',
                     'key': '/path/to/client.key',
-                    'host': '192.168.0.116',
-                    'port': 1234
+                    'host': '192.168.0.116'
                 }
             }
             rsp = NetworkManager.delete_network(network=json.dumps(nw_create_payload))
@@ -132,8 +129,7 @@ This example shows creation of a subnet::
                 'provider': {
                     'cert': '/path/to/client.crt',
                     'key': '/path/to/client.key',
-                    'host': '192.168.0.116',
-                    'port': 1234
+                    'host': '192.168.0.116'
                 },
                 'organization_name': 'Tcpwave',
                 'name': 'Test Subnet 1',
@@ -161,8 +157,7 @@ This fetch the next free IP::
                 'provider': {
                     'cert': '/path/to/client.crt',
                     'key': '/path/to/client.key',
-                    'host': '192.168.0.116',
-                    'port': 1234
+                    'host': '192.168.0.116'
                 },
                 'organization_name': 'Tcpwave',
                 'subnet_address': '153.168.0.0/16'
@@ -188,8 +183,7 @@ This example shows creating an object.::
                 'provider': {
                     'cert': '/path/to/client.crt',
                     'key': '/path/to/client.key',
-                    'host': '192.168.0.116',
-                    'port': 1234
+                    'host': '192.168.0.116'
                 },
                 'organization_name': 'Tcpwave',
                 'subnet_address': '153.168.0.0/16',
@@ -217,8 +211,7 @@ This example shows deletion of an object::
                 'provider': {
                     'cert': '/path/to/client.crt',
                     'key': '/path/to/client.key',
-                    'host': '192.168.0.116',
-                    'port': 1234
+                    'host': '192.168.0.116'
                 },
                 'organization_name': 'Tcpwave',
                 'ip_address': ip

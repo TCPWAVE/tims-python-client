@@ -2,7 +2,7 @@ import ipaddress
 import json
 import re
 
-from client import Connector
+from tcpwave_client import Connector
 
 
 class NetworkManager(object):

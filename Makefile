@@ -47,7 +47,7 @@ clean-pyc:
 #	rm -fr htmlcov/
 
 #lint:
-#	flake8 infoblox_client
+#	flake8 tcpwave_client
 
 #test:
 #	python setup.py test
@@ -61,13 +61,13 @@ clean-pyc:
 #	coverage html
 #	$(BROWSER) htmlcov/index.html
 
-docs:
-	rm -f docs/infoblox_client.rst
-	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ infoblox_client
-	$(MAKE) -C docs clean
-	$(MAKE) -C docs html
-	$(BROWSER) docs/_build/html/index.html
+#docs:
+#	rm -f docs/tcpwave_client.rst
+#	rm -f docs/modules.rst
+#	sphinx-apidoc -o docs/ tcpwave_client
+#	$(MAKE) -C docs clean
+#	$(MAKE) -C docs html
+#	$(BROWSER) docs/_build/html/index.html
 
 release: clean
 	python setup.py sdist upload

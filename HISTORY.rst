@@ -1,3 +1,8 @@
+1.0.2 (2020-04-15)
+---------------------
+* packaging restructure
+* imports reordering for bug fix
+
 1.0.1 (2020-04-15)
 ---------------------
 * Updated README.rst with usage examples

@@ -2,7 +2,7 @@ import requests
 import json
 from requests.auth import HTTPBasicAuth
 from requests import Session
-from client import (APICallFailedException, UnsupportedMethodException)
+from tcpwave_client import (APICallFailedException, UnsupportedMethodException)
 
 
 class Connector(object):
