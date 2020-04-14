@@ -6,7 +6,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-with open('README.md') as readme_file:
+with open('README.rst') as readme_file:
     readme = readme_file.read()
 
 with open('HISTORY.rst') as history_file:
@@ -21,7 +21,7 @@ with open('requirements.txt') as requirements_file:
 
 setup(
     name='tcpwave-client',
-    version='1.0.0',
+    version='1.0.1',
     description="Client for interacting with Tcpwave's IPAM",
     license='Apache',
     long_description=readme + '\n\n' + history,
