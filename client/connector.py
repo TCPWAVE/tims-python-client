@@ -2,7 +2,6 @@ import requests
 import json
 from requests.auth import HTTPBasicAuth
 from requests import Session
-from _collections import defaultdict
 from client import (APICallFailedException, UnsupportedMethodException)
 
 

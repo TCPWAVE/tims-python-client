@@ -3,10 +3,10 @@ Python client for communication with Tcpwave's IPAM.
 
 # Pre-requisites:
 Basic Authentication is not supported. Only certificates based authentication is supported.
-So client must have a proper certificate and these certificates must be added to IPAM.
+So client must have a proper certificate and these certificates must be added to IPAM.\
 Certificate files required:
-1. client certificate 
-2. client key
+* client certificate 
+* client key
 
 # Supported Operations
 Following operations are supported:

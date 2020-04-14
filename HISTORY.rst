@@ -1,3 +1,7 @@
+1.0.0 (2020-04-15)
+---------------------
+* code cleanup
+
 0.0.1 (2020-04-15)
 ---------------------
 * Added connector to send API requests to Tcpwave's IPAM
