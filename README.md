@@ -24,8 +24,8 @@ pip install tcpwave-client
 ## Create Network
 Below is a complete program showing the use of this library. This example shows how to create network in IPAM using this library
 ```python
-from client.networks import NetworkManager
-from client.exceptions import APICallFailedException
+from tcpwave_client import NetworkManager
+from tcpwave_client import APICallFailedException
 import json
 
 def create_network():
